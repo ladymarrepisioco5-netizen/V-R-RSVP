@@ -1,0 +1,150 @@
+/* ========== GLOBAL STYLES ========== */
+body {
+  margin: 0;
+  background: url('0111.jpg') no-repeat center center;
+  background-size: cover;
+  font-family: 'Georgia', serif;
+}
+/* ========== INVITATION PAGE ========== */
+.invitation-text {
+  text-align: center;
+  color: #161302c8;
+  position: relative;
+  z-index: 2; /* para nasa ibabaw ng overlay */
+}
+
+.invitation-text h1 {
+  font-size: 2.5em;
+  letter-spacing: 4px;   /* mas maluwag ang pagitan ng letters */
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4); /* shadow for depth */
+}
+
+.invitation-text h2 {
+  font-size: 2em;
+  color: #e3e8ed;
+  margin: 0.4em 0;
+  letter-spacing: 2px;
+}
+
+.invitation-text p {
+  font-style: italic;
+  margin-bottom: 1.2em;
+  line-height: 1.6;      /* mas maganda ang spacing ng lines */
+}
+
+.hero {
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+  text-align: center;    /* center text alignment */
+  height: 100vh;
+  position: relative;
+}
+
+.hero .overlay {
+  position: fixed;   /* fixed para sumakop sa buong viewport */
+  inset: 0;          /* shorthand para top:0; right:0; bottom:0; left:0 */
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 50, 0.5);
+  z-index: 1;        /* siguraduhin nasa ibabaw ng background image */
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #180d4763;
+  color: rgb(231, 223, 198);
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #0b0645f6;
+}
+
+.btn-secondary {
+  background-color: #16055854;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #160558ee;
+}
+
+/* ========== THANK YOU PAGE ========== */
+.thankyou-section {
+  text-align: center;
+  margin-top: 10%;   /* mas balanced kaysa 20% */
+  max-width: 600px;  /* para hindi sobrang lapad */
+  background: rgba(255,255,255,0.8);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.thankyou-body {
+  background: url('rsvp.background.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+/* ========== FOOTER & HOME BUTTON ========== */
+.home-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #180d4763; /* same tone as RSVP buttons */
+  color: rgb(231, 223, 198);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.home-btn:hover {
+  background-color: #0b0645f6;
+  transform: scale(1.05);
+}
+
+/* ========== ANIMATIONS ========== */
+.falling-flowers, .falling-glitters {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999;
+}
+.flower {
+  position: absolute;
+  top: -3px;
+  width: 5px;
+  animation: fall linear infinite;
+}
+.glitter {
+  position: absolute;
+  top: -10px;
+  width: 2px; height: 2px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 4px rgba(255,255,255,0.8),
+              0 0 8px rgba(255,255,255,0.6);
+  animation: glitterFall linear infinite;
+}
+@keyframes fall { to { transform: translateY(100vh); } }
+@keyframes glitterFall { to { transform: translateY(100vh); opacity: 0; } }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 600px) {
+  .invitation-text h1 { font-size: 2em; }
+  .invitation-text h2 { font-size: 1.5em; }
+  .invitation-text p { font-size: 1em; }
+}
+
+
+

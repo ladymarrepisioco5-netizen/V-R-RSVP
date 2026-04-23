@@ -1,0 +1,60 @@
+/* ========== THANK YOU PAGE ========== */
+.thankyou-body {
+  background: url('rsvp.background.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;       /* siguradong sakop ang buong screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou-section {
+  text-align: center;
+  max-width: 600px;
+  background: rgba(230, 215, 158, 0.566); /* semi-transparent overlay */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* subtle shadow */
+}
+
+.thankyou-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  color: #2c2c2c;
+}
+
+.thankyou-section p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  color: #444;
+}
+
+.thankyou-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  color: #2c2c2c;
+  animation: fadeInDown 1.5s ease; /* dito mo idinagdag */
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Back to Home button */
+.home-btn {
+  display: inline-block;
+  background-color: #180d4763; /* consistent tone */
+  color: rgb(233, 228, 215);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.home-btn:hover {
+  background-color: #0b0645f6;
+  transform: scale(1.05);
+}
+

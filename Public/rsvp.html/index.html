@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RSVP</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Global styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Unique RSVP styles -->
+  <link rel="stylesheet" href="rsvp.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="colors.html">Color Guide</a>
+    <a href="rsvp.html">RSVP</a>
+  </nav>
+
+  <!-- Falling flowers overlay -->
+  <div class="falling-flowers">
+    <img src="Clipflower.png" class="flower">
+    <img src="Clipflower.png" class="flower">
+    <img src="Clipflower.png" class="flower">
+  </div>
+
+  <!-- Falling glitters overlay -->
+  <div class="falling-glitters"></div>
+
+ <!-- RSVP Container -->
+  <div class="rsvp-container">
+    <!-- Left side -->
+    <div class="form-section">
+      <!-- Header text OUTSIDE the box -->
+      <div class="rsvp-header">
+        <h2 class="rsvp-title">YOU ARE INVITED</h2>
+        <h3 class="rsvp-subtitle">RSVP</h3>
+        <p class="invite-sub">
+          We would be honored to have you celebrate with us.<br>
+          Please let us know if you can attend our special day.
+        </p>
+      </div>
+
+ <!-- Actual form INSIDE the box -->
+      <div class="rsvp-box">
+        <form action="/rsvp" method="POST" class="rsvp-form">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="guests">Number of Guests *</label>
+          <select id="guests" name="guests" required>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+          </select>
+
+          <p>Will You Attend? *</p>
+          <label><input type="radio" name="attending" value="Yes" required> Yes, I'll be there</label><br>
+          <label><input type="radio" name="attending" value="No" required> Sorry, can't make it</label>
+
+          <button type="submit">Submit RSVP</button>
+        </form>
+      </div>
+
+      
+    <!-- Note text under the box -->
+  <p class="rsvp-note">
+    Need to update your RSVP? Simply submit a new form with your updated information.
+  </p>
+</div>
+
+ <!-- Right side -->
+  <div class="image-section">
+    <img src="099.jpg" alt="Couple Photo">
+    <h3>Vincent & Rochelle</h3>
+    <p>Wedding 2026</p>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <button class="home-btn" onclick="window.location.href='index.html'">Back to Home</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
