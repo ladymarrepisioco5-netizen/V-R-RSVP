@@ -40,3 +40,4 @@ Name: JHELSIE SARTE, Attendance: No
 Name: kristin pecson, Attendance: No
 Name: JHELSIE SARTE, Attendance: Yes
 Name: Lady marr episioco, Attendance: Yes
+Name: JHELSIE SARTE, Attendance: No
