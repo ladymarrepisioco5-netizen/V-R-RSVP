@@ -1,4 +1,4 @@
-/* RSVP Page Background */
+/* Background */
 body {
   margin: 0;
   padding: 0;
@@ -10,15 +10,14 @@ body {
   background-size: cover;
 }
 
-/* Navigation Bar */
+/* Navigation */
 nav {
   width: 100%;
-  background: rgba(10, 26, 58, 0.9);
+  background: rgba(10,26,58,0.9);
   padding: 15px 0;
   text-align: center;
 }
 nav a {
-  font-family: 'Playfair Display', serif;
   font-size: 18px;
   color: #f5d77d;
   margin: 0 20px;
@@ -36,12 +35,12 @@ nav a:hover {
   box-shadow: 0 0 10px rgba(245,215,125,0.6);
 }
 
-/* Main RSVP Container */
+/* RSVP Layout */
 .rsvp-container {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  height: calc(100vh - 80px); /* minus nav height */
+  height: calc(100vh - 80px);
   padding: 20px;
   box-sizing: border-box;
 }
@@ -56,14 +55,28 @@ nav a:hover {
   padding: 40px;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .form-section h2 {
   font-size: 28px;
   margin-bottom: 15px;
+}
+.note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Google Form iframe */
+.google-form {
+  width: 100%;
+  max-width: 600px;
+  height: 700px;
+  border: 3px solid #d4af37;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: #fff;
+  margin: 20px auto;
+  display: block;
 }
 
 /* Image Section */
@@ -90,7 +103,6 @@ nav a:hover {
   text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
 .image-section p {
-  font-family: 'Playfair Display', serif;
   font-size: 22px;
   color: #f5d77d;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
@@ -101,20 +113,7 @@ nav a:hover {
   font-weight: bold;
 }
 
-/* Google Form iframe */
-.google-form {
-  width: 100%;
-  max-width: 600px;
-  height: 700px;
-  border: 3px solid #d4af37;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  background: #fff;
-  margin: 20px auto;
-  display: block;
-}
-
-/* Responsive Layout */
+/* Responsive */
 @media (max-width: 768px) {
   .rsvp-container {
     flex-direction: column;
@@ -128,7 +127,7 @@ nav a:hover {
   }
 }
 
-/* Falling Flowers Animation */
+/* Falling Flowers */
 .falling-flowers {
   position: fixed;
   top: 0; left: 0;
@@ -150,4 +149,3 @@ nav a:hover {
   0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
   100% { transform: translateY(100vh) rotate(360deg); opacity: 0.8; }
 }
-
