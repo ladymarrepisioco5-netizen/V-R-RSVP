@@ -5,7 +5,7 @@ body {
   font-family: 'Playfair Display', serif;
   background: linear-gradient(to bottom, #0a1a3a65, #1c2b4d);
   background-image: url('rsvp.background.jpg');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   background-size: cover;
 }
@@ -54,7 +54,7 @@ nav a:hover {
   flex: 1;
   max-width: 50%;
   background: rgba(255,255,255,0.2);
-  color: #0a1a3a;
+  color: #ffffff;
   border-radius: 12px;
   padding: 40px;
   text-align: center;
