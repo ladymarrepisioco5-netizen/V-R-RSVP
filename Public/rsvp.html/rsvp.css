@@ -116,25 +116,16 @@ nav a:hover {
 
 /* Style the Google Form iframe */
 .google-form {
-  width: 100%;              /* make it responsive */
-  max-width: 500px;         /* limit width for balance */
-  height: 500px;            /* adjust height to fit form */
-  border: 3px solid #d4af37; /* gold border for elegance */
-  border-radius: 1%;      /* rounded corners */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* soft shadow */
-  background: #ffffff2a;         /* white background */
-  margin: 20px auto;        /* center it */
-  display: block;
+    width: 100%;              /* sakupin ang buong box */
+    max-width: 600px;         /* limit para hindi lumampas */
+    height: 700px;            /* sapat na taas para sa form */
+    border: 3px solid #d4af37; /* gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    background: #fff;
+    margin: 20px auto;
+    display: block;
 }
-
-/* Optional: style the RSVP box container */
-.rsvp-box {
-  text-align: center;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.195);
-  border-radius: 15px;
-}
-
 
 .image-section img:hover {
   transform: scale(1.05);
