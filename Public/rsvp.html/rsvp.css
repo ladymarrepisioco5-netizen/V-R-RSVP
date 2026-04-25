@@ -21,22 +21,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Title and intro text outside the box */
-.rsvp-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    color: #f5d77d; /* gold accent */
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.invite-sub {
-    font-size: 16px;
-    color: #eeeeee7d;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 /* Parehong section pantay ang taas */
 .form-section,
 .image-section {
@@ -62,14 +46,6 @@ body {
     align-items: center;     /* center horizontally */
     padding: 40px;           /* breathing space sa loob */
     box-sizing: border-box;
-}
-
-.invite-title {
-  font-family: 'Great Vibes', cursive;
-  font-size: 52px;
-  color: #8a6e1c; /* gold accent */
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-  margin-bottom: 15px;
 }
 
 .form-section h2 {
@@ -125,29 +101,6 @@ nav a:hover {
   box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
-.rsvp-title {
-  font-family: 'Great Vibes', cursive; /* romantic script font */
-  font-size: 48px;
-  color:#f5d77d; /* gold accent */
-  text-align: center;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-  background: rgba(255, 253, 253, 0.495); /* subtle background highlight */
-  padding: 8px 16px;
-  border-radius: 8px;
-  letter-spacing: 2px;
-}
-
-.rsvp-form label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-  color: #f5d77d;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-  background: rgba(0,0,0,0.3);
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
 .image-section {
   width: 80%;               /* pantay sa form width */
   max-width: 700px;
@@ -186,20 +139,6 @@ nav a:hover {
   font-weight: bold;
 }
 
-/* Note & Footer */
-.rsvp-note {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 16px;
-  font-family: 'Playfair Display', serif;
-  color: #f5d77d; /* gold accent */
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-  background: rgba(0,0,0,0.4); /* subtle background highlight */
-  padding: 10px 15px;
-  border-radius: 8px;
-  display: inline-block; /* para hindi buong lapad */
-}
-
 footer {
   text-align: center;
   padding: 20px;
@@ -220,24 +159,6 @@ footer {
   .image-section img {
     max-width: 95%;
   }
-
-
-.invite-sub {
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  color: #f5d77d;
-  text-align: center;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-  background: rgba(0,0,0,0.35);
-  padding: 12px 20px;
-  border-radius: 8px;
-  line-height: 1.6;
-  margin: 20px auto;       /* space kahit wide screen */
-  max-width: 700px;
-  display: block;
-  position: relative;      /* para hindi matabunan */
-  z-index: 10;             /* siguradong nasa ibabaw */
-}
 
 }
 .falling-flowers {
@@ -270,12 +191,12 @@ footer {
 /* Style the Google Form iframe */
 .google-form {
   width: 100%;              /* make it responsive */
-  max-width: 700px;         /* limit width for balance */
-  height: 800px;            /* adjust height to fit form */
+  max-width: 600px;         /* limit width for balance */
+  height: 700px;            /* adjust height to fit form */
   border: 3px solid #d4af37; /* gold border for elegance */
-  border-radius: 12px;      /* rounded corners */
+  border-radius: 1%;      /* rounded corners */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* soft shadow */
-  background: #fff;         /* white background */
+  background: #ffffff2a;         /* white background */
   margin: 20px auto;        /* center it */
   display: block;
 }
@@ -284,6 +205,7 @@ footer {
 .rsvp-box {
   text-align: center;
   padding: 20px;
-  background: rgba(255,255,255,0.85);
+  background: rgba(255, 255, 255, 0.195);
   border-radius: 15px;
 }
+
