@@ -1,7 +1,7 @@
 // Falling Flowers Effect
 function createFlower() {
   const flower = document.createElement('img');
-  flower.src = "Public/Clipflower.png"; // palitan mo ng tamang path ng PNG mo
+  flower.src = "Clipflower.png"; // palitan mo ng tamang path ng PNG mo
   flower.classList.add('flower');
 
   // random position
