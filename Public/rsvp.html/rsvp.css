@@ -3,134 +3,85 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Playfair Display', serif;
-  background: linear-gradient(to bottom, #0a1a3a65, #1c2b4d); /* dark blue gradient */
-  color: #0d0d5e3d;
-  background-image: url('rsvp.background.jpg'); /* optional floral accent PNG */
+  background: linear-gradient(to bottom, #0a1a3a65, #1c2b4d);
+  background-image: url('rsvp.background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-/* Main container fixed to viewport */
-.rsvp-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;   /* pantay vertically */
-  height: 100vh;         /* buong screen height */
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Parehong section pantay ang taas */
-.form-section,
-.image-section {
-    flex: 1;
-    height: 80vh;            /* parehong height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* center content vertically */
-    align-items: center;     /* center horizontally */
-}
-
-/* Form box styling */
-/* Form box styling */
-.form-section {
-    flex: 1;                /* kalahati ng page */
-    max-width: 50%;         /* limit to half */
-    background: rgba(255, 255, 255, 0.245);
-    color: #0a1a3a;
-    border-radius: 0;       /* flush edges para pantay sa image */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* center content vertically */
-    align-items: center;     /* center horizontally */
-    padding: 40px;           /* breathing space sa loob */
-    box-sizing: border-box;
-}
-
-.form-section h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  color: #0a1a3a;
-  margin-bottom: 15px;
-}
-
 /* Navigation Bar */
 nav {
   width: 100%;
-  background: rgba(10, 26, 58, 0.9); /* dark blue background */
+  background: rgba(10, 26, 58, 0.9);
   padding: 15px 0;
   text-align: center;
 }
-
 nav a {
   font-family: 'Playfair Display', serif;
   font-size: 18px;
-  color: #f5d77d; /* gold accent */
+  color: #f5d77d;
   margin: 0 20px;
   text-decoration: none;
   font-weight: bold;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-  background: rgba(255,255,255,0.1); /* subtle background highlight */
+  background: rgba(255,255,255,0.1);
   padding: 8px 16px;
   border-radius: 6px;
   transition: all 0.3s ease;
 }
-
 nav a:hover {
   background: #f5d77d;
   color: #0a1a3a;
   box-shadow: 0 0 10px rgba(245,215,125,0.6);
 }
 
+/* Main RSVP Container */
 .rsvp-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
   height: calc(100vh - 80px); /* minus nav height */
   padding: 20px;
   box-sizing: border-box;
 }
 
+/* Form Section */
 .form-section {
-  max-width: 600px;
-  background: rgba(255,255,255,0.15);
-  padding: 40px;
+  flex: 1;
+  max-width: 50%;
+  background: rgba(255,255,255,0.2);
+  color: #0a1a3a;
   border-radius: 12px;
+  padding: 40px;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
+/* Image Section */
 .image-section {
-  width: 80%;               /* pantay sa form width */
-  max-width: 700px;
+  flex: 1;
+  max-width: 50%;
   text-align: center;
 }
-
 .image-section img {
-  width: 30%;
+  width: 80%;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.6);
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
-
-/* Style the Google Form iframe */
-.google-form {
-    width: 100%;              /* sakupin ang buong box */
-    max-width: 600px;         /* limit para hindi lumampas */
-    height: 700px;            /* sapat na taas para sa form */
-    border: 3px solid #d4af37; /* gold border */
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    background: #fff;
-    margin: 20px auto;
-    display: block;
-}
-
 .image-section img:hover {
   transform: scale(1.05);
 }
-
 .image-section h3 {
   margin-top: 20px;
   font-family: 'Great Vibes', cursive;
@@ -138,67 +89,65 @@ nav a:hover {
   color: #f5d77d;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
-
 .image-section p {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
-  color: #f5d77d; /* gold accent */
-  text-align: center;
+  color: #f5d77d;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-  background: rgba(0,0,0,0.4); /* subtle highlight */
+  background: rgba(0,0,0,0.4);
   padding: 8px 16px;
   border-radius: 6px;
   letter-spacing: 2px;
   font-weight: bold;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
+/* Google Form iframe */
+.google-form {
+  width: 100%;
+  max-width: 600px;
+  height: 700px;
+  border: 3px solid #d4af37;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: #fff;
+  margin: 20px auto;
+  display: block;
 }
 
 /* Responsive Layout */
 @media (max-width: 768px) {
   .rsvp-container {
     flex-direction: column;
-    padding: 20px;
   }
-
-  .form-section {
+  .form-section, .image-section {
     max-width: 100%;
     margin-bottom: 30px;
   }
-
   .image-section img {
     max-width: 95%;
   }
-
 }
+
+/* Falling Flowers Animation */
 .falling-flowers {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* para hindi maka-block ng clicks */
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
   overflow: hidden;
 }
-
 .flower {
   position: absolute;
   top: -100px;
   width: 40px;
   animation: fall 10s linear infinite;
 }
-
 .flower:nth-child(1) { left: 10%; animation-delay: 0s; }
 .flower:nth-child(2) { left: 30%; animation-delay: 2s; }
 .flower:nth-child(3) { left: 60%; animation-delay: 4s; }
 .flower:nth-child(4) { left: 80%; animation-delay: 6s; }
-
 @keyframes fall {
   0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
   100% { transform: translateY(100vh) rotate(360deg); opacity: 0.8; }
 }
-
 
