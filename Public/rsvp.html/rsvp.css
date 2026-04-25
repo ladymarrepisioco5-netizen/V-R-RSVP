@@ -43,6 +43,10 @@ nav a:hover {
   height: calc(100vh - 80px);
   padding: 20px;
   box-sizing: border-box;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
 }
 
 /* Form Section */
