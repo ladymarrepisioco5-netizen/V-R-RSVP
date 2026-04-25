@@ -191,8 +191,8 @@ footer {
 /* Style the Google Form iframe */
 .google-form {
   width: 100%;              /* make it responsive */
-  max-width: 600px;         /* limit width for balance */
-  height: 700px;            /* adjust height to fit form */
+  max-width: 500px;         /* limit width for balance */
+  height: 500px;            /* adjust height to fit form */
   border: 3px solid #d4af37; /* gold border for elegance */
   border-radius: 1%;      /* rounded corners */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* soft shadow */
